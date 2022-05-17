@@ -1,0 +1,12 @@
+#!/sbin/openrc-run
+
+# This file should be placed in /etc/init.d/
+
+command=/home/app/app-run
+command_background=true
+command_user="app:app"
+pidfile="/run/${RC_SVCNAME}.pid"
+
+depend() {
+    need postgresql nginx
+}
