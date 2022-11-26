@@ -5,6 +5,8 @@ A set of scripts maintained to make it easier to bring projects online.
 - `aspnet` -- deployment scripts for an ASP.Net Core website running under
 Alpine, behind an nginx reverse-proxy. Complete with LetsEncrypt support out of
 box. Assumes the application is backed with PostgreSQL.
+- `ops` -- daily operations scripts, currently contains an automated database
+backup. Backups are offshored to an Azure blob container for safekeeping.
 
 ## Why Alpine?
 Alpine is cost-effective. Applications built with .NET Core seem to like a few

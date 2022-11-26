@@ -1,0 +1,2 @@
+MAILTO=<mail@to>
+0 23 * * * chronic ~/backup-db.sh

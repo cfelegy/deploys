@@ -1,0 +1,6 @@
+# azcopy is built for glibc, not musl; install compatibility layer
+doas apk add libc6-compat
+
+wget https://aka.ms/downloadazcopy-v10-linux -O azcopy.tar
+tar -xvf azcopy.tar
+mv azcopy_*/ azcopy
